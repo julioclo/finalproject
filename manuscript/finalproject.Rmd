@@ -1,0 +1,189 @@
+---
+title             : "The use of DOM in Spanish among Romanian-speaking L2 learners"
+shorttitle        : "The role of extralinguistic factors"
+
+author: 
+  - name          : "Julio Cesar Lopez Otero"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "15 Seminary Place, New Brunswick, NJ 08901"
+    email         : "julio.lopez@rutgers.edu"
+
+
+
+
+
+
+affiliation:
+  - id            : "1"
+    institution   : "Rutgers University"
+
+abstract: > 
+  Previous studies have examined the acquisition of the Differential Object Marking (DOM) in Spanish among English speakers and have argued that their acquisition process can be accounted for by Lardiere’s (2008, 2009) Feature Re-assembly Hypothesis (Guijarro-Fuentes, 2012; Nediger, Pires & Guijarro-Fuentes, 2015). However, the acquisition of the Spanish DOM by speakers whose dominant language also has DOM is underexplored. Spanish and Romanian have DOM systems ruled by animacy and definiteness. However, following Aissen (2003), the constraints regulating these features are not hierarchically ranked similarly in Spanish and Romanian, resulting in some variation in their distribution (Cornilescu, 2000; Leonetti, 2004, 2008; Mardale, 2008).
+  The purpose of the present study is to examine which extralinguistic factors play a role in the production of DOM in Romanian-speaking learners of Spanish. A group of Romanian-Spanish bilinguals (n = 18) and a group of Spanish-speaking monolinguals (n = 17) completed language background questionnaire, a lexical knowledge task, and an elicited production task. The results show that the production of DOM among the Romanian-speaking learners of Spanish in contexts in which the distributions of the DOM in the two languages diverge was correlated to their lexical knowledge, their education level, and the amount of Romanian they speak in a daily basis.
+  
+keywords          : "Spanish DOM, second language acquisition, extralinguistic factors."
+
+figsintext        : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+lineno            : yes
+mask              : no
+
+class             : "man"
+output            : papaja::apa6_word
+---
+
+```{r load_packages, include = FALSE}
+library("papaja")
+setwd("~/Desktop/finalproject")
+```
+
+```{r analysis_preferences}
+# Seed for random number generation
+set.seed(42)
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r,'source_script', message=FALSE, echo=FALSE}
+source("../scripts/figs.R")
+```
+
+# Introduction
+In this study, I explore the role of extralinguistic factors in the production of DOM in Spanish among Romanian-speaking L2 learners of Spanish in contexts in which Romanian and Spanish DOM systems differ. The two contexts that I looked at are DOM in agentivity constraint contexts (Torrego, 1998) and ungrammatical DOM production in inanimate demonstrative pronouns. I explored the role of lexical knowledge and a series of extralinguistic factors (level of education, amount of Spanish spoken daily, amount of Romanian spoken daily, years of residence in Spain) in the production of DOM in these two contexts.
+
+# Research question and hypothesis
+RQ: Is the production of DOM in Spanish among Romanian-speaking L2 learners of Spanish correlated to lexical knowledge or to any extralinguistic factor?
+
+H: Yes, the production of DOM in Spanish among Romanian-speaking L2 learners of Spanish is correlated to their lexical knowledge or to extralinguistic factors.
+
+# Methods
+This section presents the methodology that was implemented for the study. It is organized as follows: First, I discuss the participant groups who took part in the study. Then, I describe the tasks, both screening and experimental, as well as the procedure followed when they were implemented. Finally, I discuss how the experimental tasks respond to the research questions.
+
+## Participants
+In this section, I will present a description of the subjects who participated in the study. Two groups took part in the study: a group of Romanian-speaking L2 learners of Spanish (n = 18) and, for comparison purposes, a group of Spanish native speakers (n = 17). I used the Spanish version of the Experience and Proficiency Questionnaire (LEAP-Q) (Marian, Blumenfeld, & Kaushanskaya, 2007) in order to obtain information on the participants’ linguistic profile.
+
+  The Romanian-Spanish bilingual group (henceforth bilinguals) (age range, 21-49; M = 30.89, SD = 8.04) is composed of 18 participants (female = 16). They all started learning Spanish after puberty (age of onset of acquisition range, 15-37, M = 20.72, SD = 6.75) in a naturalistic setting in Spain (years of residence range, 7-14, M = 9.61, SD = 2.57). Also, they all reported that their dominant language was Romanian and that Spanish was their second language in terms of dominance. Some reported some knowledge of other languages, such as English (14/18), French (5/18), and German (2/18). They self-assessed their overall Spanish skills as highly proficient (M = 9.01, SD = 0.65), as well as specifically (speaking: M = 8.19, SD = 0.86; listening: M = 9.39, SD = 0.78; reading: M = 9.44, SD = 0.78).
+  
+  With regard to their patterns of language use, most of the bilinguals (13/18) reported using more Spanish than Romanian in their daily life. Indeed, 5 out of 18 reported using Spanish more than 80% of the time. On the other hand, 3 bilinguals reported using both languages equally, and 2 of them reported speaking more Romanian and using Spanish only 40% of the time. Within their families, all the bilinguals reported using Romanian. In addition, 4 participants reported using some Romanian and Spanish code-mixing and one participant used both Romanian and Spanish at home.
+  
+  In relation to their sociolinguistic profile, most of the bilingual group comes from Bucharest and the surrounding Southeastern region of Romania. In addition, two participants come from Transylvania, and one participant is originally from Oltenia, the Southwestern region of Romania. Currently, they reside in Southwestern Spain. With regard to their education, eleven of the bilingual speakers had a university degree, whereas seven had completed technical/professional education. As for their occupations, five participants reported being students, three were travel agents, one lawyer, one business manager, one seamstress, one cook and one singer. Five participants reported not working at the time of the data collection.
+  
+  On the other hand, the Spanish native speakers group (henceforth monolinguals) (age range, 19-50; M = 27.65; SD = 8.72) is composed of 17 participants (female = 8) living in Seville, Spain. Their knowledge of languages other than Spanish was limited and they had never lived abroad. Six of the monolinguals had a university degree while ten had completed secondary education. As for their occupations, there were six students, two business managers, one engineer, one software tester, one customer service representative, one retailer and one school custodian. Four participants reported not working at the time of the data collection.
+
+## Task and Procedures
+
+In this section, I describe the tasks that I implemented for the study. Both screening and experimental tasks were used for the study, as well as the LEAP-Q discussed above. The tasks used for data collection are listed below and are presented in the order in which they were administered to the participants:
+
+1. DELE,
+
+2. MiNT, and
+
+3. Elicited Production Task
+
+  First, the participants completed the screening tasks: the DELE and the MiNT. Second,
+the experimental task was administered: The Elicited Production Task, which looked at the production of the DOM.
+
+  The procedure was different for each group. Specifically, regarding the screening tasks, the monolinguals did not complete the DELE test and they were administered the MiNT only in Spanish, while the bilingual group did complete the DELE, as well as the MiNT in both Spanish and Romanian. With regard to the experimental task, the monolinguals completed it only in Spanish, whereas the bilinguals completed it in both Spanish and Romanian. When a task was implemented in both languages, the order in which they were administered was always Spanish and then Romanian. The goal of using tasks in both languages was to look at the bilinguals’ production of DOM in their two languages in order to determine whether there exists cross-linguistic influence in their Spanish DOM and, if so, assess whether it may be derived from their production of the DOM in Romanian. In addition, two different versions of the experimental tasks were administered in order to prevent task effects.
+  
+  The first screening task that was adminisrtered, although exclusively among the bilinguals, is an adapted version of the test Diploma de Español como Lengua Extranjera (DELE) (Cuza, Pérez-Leroux, & Sánchez, 2013). Following previous studies (e.g, Cuza, Pérez- Leroux, & Sánchez, 2013; Duffield & White, 1999; Bruhn de Garavito, 2002; Montrul & Slabakova, 2003), the goal of this screening task is to determine the proficiency of the Spanish L2 learner group. The DELE includes 50 multiple-choice items that mostly assess morphosyntax and lexicon. In order to be considered proficient L2 speakers, participants need to score at least 40 points.
+  
+  The second screening task that was administered is the Multilingual Naming Test (MiNT; Gollan, Weissberger, Runnqvist, Montoya, & Cera, 2012). The goal of this screening task is to assess the participants’ lexical knowledge, which has been found to be correlated to their overall proficiency (Bedore, Peña, Summers, Boerger, Resendiz, Greene, & Gillam, 2012; Gollan et al., 2012; Sheng, Lu, & Gollan, 2014, Treffers-Daller & Korybski, 2015). The MiNT was originally designed for speakers of any combination of Spanish, English, Mandarin, and Hebrew. The test consists of 68 images of increasing difficulty presented individually, which the subjects need to identify orally. This screening task was administered to both the monolingual and bilingual groups. The monolinguals were asked to complete it in Spanish, whereas the bilinguals completed the task in both Spanish and Romanian. The fact that, unlike the DELE, this task is not specific to any language allowed me to collect data on the lexical knowledge of Romanian among the bilinguals. This provides insights on the bilinguals’ overall proficiency in their L1, on their language dominance as bilinguals, as well as on any signs of attrition.
+  
+  The Elicited Production Task at the production of DOM under two variables affecting the direct object: animacy (animate or inanimate) and definiteness (determiner + noun DP or demonstrative pronoun DP). There were four conditions and 20 experimental items (k = 5). Additionally, another condition looked at DOM in agentivity constraint contexts. There were also 25 distractors. First, the participants were shown a preamble along with a picture; then, they were presented with a prompt with a gap which needed to be filled in by using a word in parentheses.
+  
+# Data analysis
+
+ Data from the Elicited Production Task were analyzed using a generalized linear model (GLM) with a binomial linking function. The model included DOM response as the criterion, and extralinguistic factors as predictors.
+ 
+ 
+# Results
+
+I will first report the results from the first context under examination, agentivity constraint contexts. Then, I will report the results from the ungrammatical uses of DOM in inanimate demonstrative pronoun contexts.
+
+
+## Agentivity Constraint Contexts
+
+  The plot below shows that there were item effects in this task, given that Spanish-speaking monolinguals did not produce DOM in two of the five items of this condition.
+
+### First context: Agentivity Constraint (Torrego, 1998)
+
+```{r, 'fig1', message=FALSE, echo=FALSE}
+fig1
+```
+
+  Therefore, I only examined possible correlations between the three items in which both groups showed consistent use of DOM and lexical/extralinguistic predictors: lexical knowledge, level of education, amount of Spanish spoken daily, amount of Romanian spoken daily, and years of residence in Spain. The only predictor that was significant was lexical knowledge (β = .23, SE = .1, z = 2.23, p = .026).
+  
+```{r, 'mod_mint3', message=FALSE, echo=FALSE}
+summary(mod_mint3)
+```
+
+```{r, 'fig2', message=FALSE, echo=FALSE}
+fig2
+```
+
+  This correlation can be observed in the plot above, which depicts the positive correlation between MiNT scores and grammatical production of Spanish DOM in agentivity constraint contexts.
+
+## Inanimate Demonstrative Pronoun Contexts
+
+  Figure 3 below shows the production of ungrammatical DOM in inanimate demonstrative pronoun contexts.
+  
+```{r, 'fig3', message=FALSE, echo=FALSE}
+fig3
+```
+
+  I examined possible correlations between the ungrammatical production of Spanish DOM in inanimate demonstrative pronoun contexts and lexical/extralinguistic predictors: lexical knowledge, level of education, amount of Spanish spoken daily, amount of Romanian spoken daily, and years of residence in Spain. The only predictors that were significant were level of education (β = -0.88, SE = .24, z = -3.59, p < .001) and amount of Romanian spoken daily (β = .04, SE = .02, z = 2.33 , p = .02). There were no significant covariates or interactions.
+  
+```{r, 'mod_educationP', message=FALSE, echo=FALSE}
+summary(mod_educationP)
+```
+
+```{r, 'mod_rodayP', message=FALSE, echo=FALSE}
+summary(mod_rodayP)
+```
+
+  Figure 4 below shows the negative correlation between the production of ungrammatical DOM in inanimate demonstrative pronouns and level of education in Romanian-Spanish bilinguals.
+  
+```{r, 'fig4', message=FALSE, echo=FALSE}
+fig4
+```
+
+  Figure 5 below depicts the positive correlation between the production of ungrammatical DOM in inanimate demonstrative pronouns and amount of Romanian spoken in Romanian-Spanish bilinguals.
+  
+```{r, 'fig5', message=FALSE, echo=FALSE}
+fig5
+```
+
+# Discussion
+
+  This exploratory study has shown that both lexical and extralinguistic factors play a role in the production of Spanish DOM in Romanian-Spanish bilinguals. Specifically, MiNT score, level of education and amount of Romanian spoken daily.
+  
+  Lexical knowledge was found to be positively correlated with the production of DOM in agentivity constraint contexts. Previous studies had documented the correlation between lexical knowledge and syntactic knowledge and overall proficiency (Bedore, Peña, Summers, Boerger, Resendiz, Greene, & Gillam, 2012; Gollan et al., 2012; Sheng, Lu, & Gollan, 2014, Treffers-Daller & Korybski, 2015). The correlation between lexical knowledge and the production of DOM in this context is that these verbs, often used in these agentivity constraint contexts, have been lexicalized along with the DOM. Therefore, the second language learners might have learned them as a lexical chunk.
+  
+  Level of education was to be negatively correlated with the production of ungrammatical DOM in inanimate demonstrative pronoun contexts, while the amount of Romanian spoken daily was found to be positively correlated with the ungrammatical production of DOM in such context. These correlations illustrate the importance of language activation and inhibition in the bilingual mind (Putnam & Sanchez, 2013). 
+  
+  It can be argued that the activation of Spanish was more frequent in subjects with high levels of education. The use of Spanish in an academic setting, which implies exposure to a high register of the language as well as the need to write in such register, may have an impact in the activation of Spanish in bilinguals. On the other hand, the role of inhibition is also crucial in the production of ungrammatical DOM in Spanish. Bilinguals who use more Romanian are more likely to fail to inhibit features of their L1 which may result in cross-linguistic influence in the L2. Bilinguals who reported using Romanian less frequently produced less instances of ungrammatical DOM in Spanish. 
+
+\newpage
+
+# References
+
+Bedore, L. M., Peña, E. D., Summers, C. L., Boerger, K. M., Resendiz, M. D., Greene, K., & Gillam, R. B. (2012). The Measure Matters: Language Dominance Profiles across Measures in Spanish-English Bilingual Children. Bilingualism: Language and Cognition, 15(3), 616-629.
+
+Gollan, T.H., Weissberger, G.H., Runnqvist, E., Montoya, R.I., & Cera, C.M. (2012). Self- ratings of spoken language dominance: A Multilingual Naming Test (MINT) and preliminary norms for young and aging Spanish-English bilinguals. Bilingualism: Language and Cognition, 15, 594–615.
+
+Marian, V., Blumenfeld, H., & Kaushanskaya, M. (2007). The Language Experience and Proficiency Questionnaire (LEAP-Q): Assessing language profiles in bilinguals and multilinguals. Journal of Speech Language and Hearing Research, 50.
+
+Putnam, M. & Sánchez, L. (2013). What's so incomplete about incomplete acquisition? A prolegomenon to modeling heritage language grammars. Linguistic Approaches to Bilingualism, 3(4), 476-506.
+
+Sheng, L., Lu, Y., & Gollan, T.H., (2014). Assessing language dominance in Mandarin-English bilinguals: Convergence and divergence between subjective and objective
+measures. Bilingualism: Language and Cognition, 17, 364–383.
+
+Torrego, E. (1998). The Dependencies of Objects. Cambridge, MA: MIT Press.
+
+Treffers-Daller, J., & Korybski, T. (2015) Using lexical diversity measures to operationalise language dominance in bilinguals. In C. Silva-Corvalan, & J. Treffers-Daller (Eds.), Language dominance in bilinguals: issues of measurement and operationalization (pp. 106-123). Cambridge, UK: Cambridge University Press.
+\endgroup

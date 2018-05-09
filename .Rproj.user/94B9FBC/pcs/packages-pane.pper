@@ -1,0 +1,7 @@
+{
+    "installOptions" : {
+        "installDependencies" : true,
+        "installFromRepository" : true,
+        "libraryPath" : "/Users/juliocesarlopezoterogmail.com/Library/R/3.4/library"
+    }
+}
