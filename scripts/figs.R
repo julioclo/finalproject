@@ -3,9 +3,11 @@ library(tidyverse)
 library(ggplot2)
 library(dplyr)
 library(lme4)
+library(here)
+
 # rm(list = ls(all = TRUE))
-setwd("~/Desktop/finalproject")
-dataset <- read_csv("./data/P_SP.csv")
+
+dataset <- read_csv(here("data", "P_SP.csv"))
 
 
 data <- dataset %>%

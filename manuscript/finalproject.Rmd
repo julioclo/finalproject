@@ -37,7 +37,6 @@ output            : papaja::apa6_word
 
 ```{r load_packages, include = FALSE}
 library("papaja")
-setwd("~/Desktop/finalproject")
 ```
 
 ```{r analysis_preferences}
