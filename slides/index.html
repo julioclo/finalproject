@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The use of DOM in Spanish among Romanian-speaking L2 learners</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Julio Cesar Lopez Otero" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# The use of DOM in Spanish among Romanian-speaking L2 learners
+## ⚔<br/>with xaringan
+### Julio Cesar Lopez Otero
+### 2018/04/24
+
+---
+
+### I examine the use of Differential Object Marking (DOM) in Spanish (coded as 0 or 1) among Romanian-speaking L2 learners (a language that also has DOM) and Spanish monolinguals. 
+### In this project, I specifically look at the L2 learners' production in contexts in which the DOM systems of the two languages diverge and how their production is related to information from their language background questionnaires.
+
+
+
+
+
+
+
+
+---
+### First context: Agentivity Constraint (Torrego, 1998)
+![](index_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
+---
+Fit a null model
+
+```
+## 
+## Call:
+## glm(formula = response ~ 1, family = binomial(link = "logit"), 
+##     data = datab)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -0.7487  -0.7487  -0.7487  -0.7487   1.6785  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)  -1.1285     0.2453  -4.601 4.21e-06 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 100.11  on 89  degrees of freedom
+## Residual deviance: 100.11  on 89  degrees of freedom
+## AIC: 102.11
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: MiNT 
+
+```
+## 
+## Call:
+## glm(formula = response ~ mintsp, family = binomial(link = "logit"), 
+##     data = datab)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -0.9781  -0.7602  -0.7275  -0.4365   2.1900  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept) -6.93911    4.26260  -1.628    0.104
+## mintsp       0.10079    0.07337   1.374    0.170
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 100.107  on 89  degrees of freedom
+## Residual deviance:  98.007  on 88  degrees of freedom
+## AIC: 102.01
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: education
+
+```
+## 
+## Call:
+## glm(formula = response ~ education, family = binomial(link = "logit"), 
+##     data = datab)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -0.8421  -0.7831  -0.6743  -0.6244   1.8606  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)  
+## (Intercept)  -1.7064     0.7964  -2.143   0.0321 *
+## education     0.1704     0.2196   0.776   0.4377  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 100.107  on 89  degrees of freedom
+## Residual deviance:  99.489  on 88  degrees of freedom
+## AIC: 103.49
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: Spanish spoken daily
+
+```
+## 
+## Call:
+## glm(formula = response ~ spday, family = binomial(link = "logit"), 
+##     data = datab)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -0.8272  -0.7587  -0.7100  -0.6637   1.8006  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept) -0.49304    1.03576  -0.476    0.634
+## spday       -0.01009    0.01613  -0.625    0.532
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 100.107  on 89  degrees of freedom
+## Residual deviance:  99.711  on 88  degrees of freedom
+## AIC: 103.71
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: Romanian spoken daily
+
+```
+## 
+## Call:
+## glm(formula = response ~ roday, family = binomial(link = "logit"), 
+##     data = datab)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -0.7523  -0.7496  -0.7473  -0.7456   1.6829  
+## 
+## Coefficients:
+##               Estimate Std. Error z value Pr(&gt;|z|)  
+## (Intercept) -1.1423004  0.5808548  -1.967   0.0492 *
+## roday        0.0004147  0.0157716   0.026   0.9790  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 100.11  on 89  degrees of freedom
+## Residual deviance: 100.11  on 88  degrees of freedom
+## AIC: 104.11
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: years of residence in Spain
+
+```
+## 
+## Call:
+## glm(formula = response ~ residence, family = binomial(link = "logit"), 
+##     data = datab)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -0.7770  -0.7524  -0.7444  -0.7324   1.7012  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept) -1.25310    0.87602  -1.430    0.153
+## residence    0.01236    0.08318   0.149    0.882
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 100.11  on 89  degrees of freedom
+## Residual deviance: 100.08  on 88  degrees of freedom
+## AIC: 104.08
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+# Agentivity Constraint without item effects
+![](index_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+---
+Fit a null model
+
+```
+## 
+## Call:
+## glm(formula = response ~ 1, family = binomial(link = "logit"), 
+##     data = datab3)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -0.9925  -0.9925  -0.9925   1.3744   1.3744  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept)  -0.4520     0.2791  -1.619    0.105
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 72.171  on 53  degrees of freedom
+## Residual deviance: 72.171  on 53  degrees of freedom
+## AIC: 74.171
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: MiNT SIGNIFICANT
+
+```
+## 
+## Call:
+## glm(formula = response ~ mintsp, family = binomial(link = "logit"), 
+##     data = datab3)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.4162  -0.9299  -0.7336   1.2420   1.8637  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)  
+## (Intercept) -13.8429     6.0587  -2.285   0.0223 *
+## mintsp        0.2321     0.1043   2.225   0.0261 *
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 72.171  on 53  degrees of freedom
+## Residual deviance: 65.434  on 52  degrees of freedom
+## AIC: 69.434
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: education
+
+```
+## 
+## Call:
+## glm(formula = response ~ education, family = binomial(link = "logit"), 
+##     data = datab3)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.1939  -1.0673  -0.8361   1.2916   1.6994  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept)  -1.4781     0.9159  -1.614    0.107
+## education     0.3034     0.2536   1.196    0.232
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 72.171  on 53  degrees of freedom
+## Residual deviance: 70.678  on 52  degrees of freedom
+## AIC: 74.678
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: Spanish spoken daily
+
+```
+## 
+## Call:
+## glm(formula = response ~ spday, family = binomial(link = "logit"), 
+##     data = datab3)
+## 
+## Deviance Residuals: 
+##    Min      1Q  Median      3Q     Max  
+## -1.072  -1.004  -0.938   1.324   1.476  
+## 
+## Coefficients:
+##              Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept)  0.086576   1.183891   0.073    0.942
+## spday       -0.008497   0.018217  -0.466    0.641
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 72.171  on 53  degrees of freedom
+## Residual deviance: 71.952  on 52  degrees of freedom
+## AIC: 75.952
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: Romanian spoken daily
+
+```
+## 
+## Call:
+## glm(formula = response ~ roday, family = binomial(link = "logit"), 
+##     data = datab3)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.0371  -0.9985  -0.9608   1.3540   1.4324  
+## 
+## Coefficients:
+##              Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept) -0.290929   0.658049  -0.442    0.658
+## roday       -0.004851   0.018018  -0.269    0.788
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 72.171  on 53  degrees of freedom
+## Residual deviance: 72.098  on 52  degrees of freedom
+## AIC: 76.098
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: years of residence in Spain
+
+```
+## 
+## Call:
+## glm(formula = response ~ residence, family = binomial(link = "logit"), 
+##     data = datab3)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.0883  -0.9913  -0.9511   1.3527   1.4374  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept) -0.80052    0.99948  -0.801    0.423
+## residence    0.03455    0.09484   0.364    0.716
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 72.171  on 53  degrees of freedom
+## Residual deviance: 72.038  on 52  degrees of freedom
+## AIC: 76.038
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Best model for Agentivity Constraint (3 items)
+
+```
+## Analysis of Deviance Table
+## 
+## Model 1: response ~ 1
+## Model 2: response ~ mintsp
+##   Resid. Df Resid. Dev Df Deviance
+## 1        53     72.171            
+## 2        52     65.434  1   6.7372
+```
+---
+Best model for Agentivity Constraint (3 items)
+
+```
+## 
+## Call:
+## glm(formula = response ~ mintsp, family = binomial(link = "logit"), 
+##     data = datab3)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.4162  -0.9299  -0.7336   1.2420   1.8637  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)  
+## (Intercept) -13.8429     6.0587  -2.285   0.0223 *
+## mintsp        0.2321     0.1043   2.225   0.0261 *
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 72.171  on 53  degrees of freedom
+## Residual deviance: 65.434  on 52  degrees of freedom
+## AIC: 69.434
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+# Plot: response as a function of MiNT score
+![](index_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+---
+### Second context: Inanimate demonstrative pronoun DPs
+
+![](index_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+---
+Fit a null model
+
+```
+## 
+## Call:
+## glm(formula = response ~ 1, family = binomial(link = "logit"), 
+##     data = dataPronb)
+## 
+## Deviance Residuals: 
+##    Min      1Q  Median      3Q     Max  
+## -0.729  -0.729  -0.729  -0.729   1.706  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)  -1.1896     0.2492  -4.773 1.81e-06 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 97.789  on 89  degrees of freedom
+## Residual deviance: 97.789  on 89  degrees of freedom
+## AIC: 99.789
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: MiNT 
+
+```
+## 
+## Call:
+## glm(formula = response ~ mintsp, family = binomial(link = "logit"), 
+##     data = dataPronb)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -0.7487  -0.7339  -0.7281  -0.6964   1.7524  
+## 
+## Coefficients:
+##              Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept) -1.713587   3.752993  -0.457    0.648
+## mintsp       0.009143   0.065295   0.140    0.889
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 97.789  on 89  degrees of freedom
+## Residual deviance: 97.769  on 88  degrees of freedom
+## AIC: 101.77
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: education SIGNIFICANT
+
+```
+## 
+## Call:
+## glm(formula = response ~ education, family = binomial(link = "logit"), 
+##     data = dataPronb)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.0641  -0.4974  -0.4974  -0.3266   2.4323  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)   1.4823     0.7353   2.016 0.043807 *  
+## education    -0.8774     0.2446  -3.587 0.000335 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 97.789  on 89  degrees of freedom
+## Residual deviance: 82.659  on 88  degrees of freedom
+## AIC: 86.659
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: Spanish spoken daily
+
+```
+## 
+## Call:
+## glm(formula = response ~ spday, family = binomial(link = "logit"), 
+##     data = dataPronb)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -0.9306  -0.7456  -0.6636  -0.5215   2.0311  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept)  0.43860    1.06944   0.410    0.682
+## spday       -0.02628    0.01722  -1.526    0.127
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 97.789  on 89  degrees of freedom
+## Residual deviance: 95.325  on 88  degrees of freedom
+## AIC: 99.325
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: Romanian spoken daily SIGNIFICANT
+
+```
+## 
+## Call:
+## glm(formula = response ~ roday, family = binomial(link = "logit"), 
+##     data = dataPronb)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.0789  -0.7834  -0.5763  -0.4573   2.1493  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept) -2.59907    0.69299  -3.751 0.000176 ***
+## roday        0.03938    0.01687   2.334 0.019607 *  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 97.789  on 89  degrees of freedom
+## Residual deviance: 91.983  on 88  degrees of freedom
+## AIC: 95.983
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a categorical predictor: years of residence in Spain
+
+```
+## 
+## Call:
+## glm(formula = response ~ residence, family = binomial(link = "logit"), 
+##     data = dataPronb)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -0.7687  -0.7387  -0.7191  -0.6629   1.7610  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept) -0.88475    0.89147  -0.992    0.321
+## residence   -0.03053    0.08632  -0.354    0.724
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 97.789  on 89  degrees of freedom
+## Residual deviance: 97.663  on 88  degrees of freedom
+## AIC: 101.66
+## 
+## Number of Fisher Scoring iterations: 4
+```
+---
+Add a continuous covariate
+
+```
+## 
+## Call:
+## glm(formula = response ~ education + roday, family = binomial(link = "logit"), 
+##     data = dataPronb)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.3332  -0.7150  -0.4200  -0.2989   2.3016  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)  0.23213    0.96297   0.241 0.809515    
+## education   -0.89319    0.25991  -3.436 0.000589 ***
+## roday        0.03827    0.01747   2.190 0.028526 *  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 97.789  on 89  degrees of freedom
+## Residual deviance: 77.516  on 87  degrees of freedom
+## AIC: 83.516
+## 
+## Number of Fisher Scoring iterations: 5
+```
+---
+Add a continuous covariate
+
+```
+## 
+## Call:
+## glm(formula = response ~ roday + education, family = binomial(link = "logit"), 
+##     data = dataPronb)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.3332  -0.7150  -0.4200  -0.2989   2.3016  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)  0.23213    0.96297   0.241 0.809515    
+## roday        0.03827    0.01747   2.190 0.028526 *  
+## education   -0.89319    0.25991  -3.436 0.000589 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 97.789  on 89  degrees of freedom
+## Residual deviance: 77.516  on 87  degrees of freedom
+## AIC: 83.516
+## 
+## Number of Fisher Scoring iterations: 5
+```
+---
+Include an interaction term
+
+```
+## 
+## Call:
+## glm(formula = response ~ education * roday, family = binomial(link = "logit"), 
+##     data = dataPronb)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.3127  -0.7571  -0.3807  -0.2661   2.4075  
+## 
+## Coefficients:
+##                  Estimate Std. Error z value Pr(&gt;|z|)  
+## (Intercept)      1.114585   1.923702   0.579   0.5623  
+## education       -1.241889   0.722958  -1.718   0.0858 .
+## roday            0.016682   0.043794   0.381   0.7033  
+## education:roday  0.008475   0.016069   0.527   0.5979  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 97.789  on 89  degrees of freedom
+## Residual deviance: 77.235  on 86  degrees of freedom
+## AIC: 85.235
+## 
+## Number of Fisher Scoring iterations: 5
+```
+---
+Include an interaction term
+
+```
+## 
+## Call:
+## glm(formula = response ~ roday * education, family = binomial(link = "logit"), 
+##     data = dataPronb)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.3127  -0.7571  -0.3807  -0.2661   2.4075  
+## 
+## Coefficients:
+##                  Estimate Std. Error z value Pr(&gt;|z|)  
+## (Intercept)      1.114585   1.923702   0.579   0.5623  
+## roday            0.016682   0.043794   0.381   0.7033  
+## education       -1.241889   0.722958  -1.718   0.0858 .
+## roday:education  0.008475   0.016069   0.527   0.5979  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 97.789  on 89  degrees of freedom
+## Residual deviance: 77.235  on 86  degrees of freedom
+## AIC: 85.235
+## 
+## Number of Fisher Scoring iterations: 5
+```
+---
+First significant model
+
+```
+## Analysis of Deviance Table
+## 
+## Model 1: response ~ 1
+## Model 2: response ~ education
+##   Resid. Df Resid. Dev Df Deviance
+## 1        89     97.789            
+## 2        88     82.659  1    15.13
+```
+First significant model
+
+```
+## Analysis of Deviance Table
+## 
+## Model 1: response ~ 1
+## Model 2: response ~ roday
+##   Resid. Df Resid. Dev Df Deviance
+## 1        89     97.789            
+## 2        88     91.983  1   5.8059
+```
+---
+### Plot: the presence of ungrammatical DOM and education are negatively correlated
+![](index_files/figure-html/unnamed-chunk-12-1.png)&lt;!-- --&gt;
+---
+### Plot: the presence of ungrammatical DOM and the amount of Romanian spoken day are positively correlated
+![](index_files/figure-html/unnamed-chunk-13-1.png)&lt;!-- --&gt;
+---
+# Conclusion: 
+### Mint scores are a significant predictor in the presence of DOM in Agentivity Constraint contexts.
+### Education level is a significant predictor in the presence of DOM in Inanimate Demonstrative Pronoun DP contexts.
+### The amount of Romanian (but not Spanish) spoken daily is a significant predictor in the presence of DOM in Inanimate Demonstrative Pronoun DP contexts.
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
